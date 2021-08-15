@@ -1,0 +1,11 @@
+<h2>Your Playlist</h2>
+<div *ngIf="!playlistLoaded">
+  <p id="playlist-prompt">There are no videos in your playlist.</p>
+</div>
+<button id="clear-btn" *ngIf="playlistLoaded" (click)="clearPlaylist()">
+  Clear Playlist
+</button>
+<app-listing
+  [videoList]="playlist"
+  [hideAddtoPlaylistBTN]="playlistLoaded"
+></app-listing>

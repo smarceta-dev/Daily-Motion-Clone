@@ -1,0 +1,21 @@
+h2 {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+#clear-btn {
+  font-size: 15px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  background-color: rgb(63, 181, 202);
+  color: white;
+  border: none;
+  max-width: 150px;
+  min-width: 150px;
+  min-height: 50px;
+  max-height: 50px;
+}
+
+#playlist-prompt {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}

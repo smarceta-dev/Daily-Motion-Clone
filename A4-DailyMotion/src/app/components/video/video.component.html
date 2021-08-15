@@ -1,0 +1,36 @@
+<div id="vid-container">
+  <div id="video-desc-container">
+    <div id="vid-title-container">
+      <p>
+        <a
+          href="https://www.dailymotion.com/video/{{ videoInfo['id'] }}"
+          target="_blank"
+          >{{ videoInfo["title"] }}</a
+        >
+      </p>
+      <button
+        class="fav-button"
+        (click)="addToPlaylist()"
+        [disabled]="isInPlaylist"
+        [ngClass]="{ 'disabled-btn': isInPlaylist }"
+        [hidden]="hideAddtoPlaylistBTN"
+      >
+        {{ isInPlaylist ? "ALREADY ADDED" : "Add to Playlist" }}
+      </button>
+    </div>
+    <div id="vid-ava-name-container">
+      <img id="avatar" src="{{ videoInfo['owner.avatar_80_url'] }}" />
+      <p>{{ videoInfo["owner.username"] }}</p>
+    </div>
+    <div id="date-views-container">
+      <p>
+        Date Posted:{{ videoInfo["created_time"] * 1000 | date }}
+        <span id="space-span"></span>|<span id="space-span"></span>
+      </p>
+      <p>Views:{{ videoInfo["views_total"] }}</p>
+    </div>
+  </div>
+  <div id="thumbnail-container">
+    <img id="thumbnail" src="{{ videoInfo['thumbnail_360_url'] }}" />
+  </div>
+</div>

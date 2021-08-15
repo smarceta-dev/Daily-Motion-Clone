@@ -1,0 +1,7 @@
+<div *ngFor="let x of videoList">
+  <br />
+  <app-video
+    [videoInfo]="x"
+    [hideAddtoPlaylistBTN]="hideAddtoPlaylistBTN"
+  ></app-video>
+</div>
