@@ -1,12 +1,6 @@
-# DailyMotion-A4
+# DailyMotion
 
 Author   : Sanjin Marceta
-
-Student# : 991574394
-
-Date     : 2021-08-15
-
-Class    : 1215_42354
 
 Program Description:
 An application that uses the DailyMotion api to fetch videos and display results
